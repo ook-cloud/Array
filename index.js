@@ -55,6 +55,7 @@ function removeLast(arr) {
   return arr;
 }
 console.log(removeLast([1, 2, 3]));
+console.log(removeLast([9]));
 
 // TEST 1:  removeLast([1,2,3])         ->  [1,2]
 // TEST 2:  removeLast([9]).length      ->  0

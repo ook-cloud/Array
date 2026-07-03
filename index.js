@@ -1363,22 +1363,3 @@ console.log(positionReport(players).DEF.totalGoals);
 // TEST 1:  positionReport(players).FWD.count       ->  37
 // TEST 2:  positionReport(players).MID.avgRating   ->  81
 // TEST 3:  positionReport(players).DEF.totalGoals  ->  959
-
-/* ============================================================
-   HOW GROUPING IS USED IN REAL LIFE
-   ------------------------------------------------------------
-   This IS the SQL `GROUP BY` you'll meet in every backend job:
-       SELECT position, COUNT(*), AVG(rating)
-       FROM players GROUP BY position;
-   ...is exactly exercise 12, done in JS instead of the database.
-
-   You reach for grouping whenever raw rows must become a summary:
-   • Dashboards  — "players per club", "goals per nation" (charts
-     are just grouped counts/sums fed to a bar chart).
-   • Leaderboards / rankings — group, total, sort (ex. 10 & 11).
-   • Reports & KPIs — averages and totals per category (ex. 6, 12).
-   • Filters / facets — the "(24)" next to each club on a shop's
-     sidebar is countByClub.
-   • Buckets / histograms — age brackets, price ranges (ex. 8).
-   Master reduce-into-an-object and you can summarize ANY dataset.
-   ============================================================ */
